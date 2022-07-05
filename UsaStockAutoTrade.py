@@ -237,9 +237,9 @@ def get_exchange_rate():
 try:
     ACCESS_TOKEN = get_access_token()
 
-    nasd_symbol_list = ["AAPL"] # 매수 희망 종목 리스트 (NASD)
-    nyse_symbol_list = ["KO"] # 매수 희망 종목 리스트 (NYSE)
-    amex_symbol_list = ["LIT"] # 매수 희망 종목 리스트 (AMEX)
+    nasd_symbol_list = ["DDOG","QQQ","UDMY","KBWB"] # 매수 희망 종목 리스트 (NASD)
+    nyse_symbol_list = ["DIS","CCL","SIX"] # 매수 희망 종목 리스트 (NYSE)
+    amex_symbol_list = ["LIT","VEU"] # 매수 희망 종목 리스트 (AMEX)
     symbol_list = nasd_symbol_list + nyse_symbol_list + amex_symbol_list
     bought_list = [] # 매수 완료된 종목 리스트
     total_cash = get_balance() # 보유 현금 조회
